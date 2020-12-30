@@ -1,0 +1,18 @@
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+"""
+Created on Mon Apr 15 23:46:31 2019
+
+@author: xie
+"""
+
+x = int(input())
+if x <= 150:
+    x =x*0.4463
+    print('{:.1f}'.format(x))
+elif x <= 400:
+    x = 150*0.4463 + (x-150)*0.4663
+    print('{:.1f}'.format(x))
+else:
+    x = 150*0.4463 + 250*0.4663 + (x-400)*0.5663
+    print('{:.1f}'.format(x))
